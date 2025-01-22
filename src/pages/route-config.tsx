@@ -8,6 +8,7 @@ const AuthRoute = React.lazy(() => import("@/pages/auth"));
 type Route = {
   path: string;
   element: React.ReactNode;
+  navLink?: string;
 };
 
 const routes: Route[] = [
@@ -21,6 +22,7 @@ const routes: Route[] = [
   },
   {
     path: "dashboard/*",
+    navLink: "Dashboard",
     element: (
       <React.Suspense fallback={<Loading />}>
         <DashboardRoute />
@@ -29,6 +31,7 @@ const routes: Route[] = [
   },
   {
     path: "auth/*",
+    navLink: "Auth",
     element: (
       <React.Suspense fallback={<Loading />}>
         <AuthRoute />
