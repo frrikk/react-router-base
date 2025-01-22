@@ -1,14 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import DashboardAuth from "@/pages/dashboard/auth/dashboard-auth";
+import ChildRoute from "@/pages/dashboard/child/child-route";
 import DashboardQuery from "@/pages/dashboard/dashboard-query";
 
 function Dashboard() {
   return (
     <Routes>
-      <Route path="dashboard">
-        <Route index element={<DashboardQuery />} />
-        <Route path="auth" element={<DashboardAuth />} />
-      </Route>
+      <Route index element={<DashboardQuery />} />
+      <Route path="child-route" element={<ChildRoute />} />
     </Routes>
   );
 }
