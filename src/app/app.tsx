@@ -1,5 +1,5 @@
 import * as React from "react";
-import AppRoutes from "@/app/app-routes";
+import AppRoutes from "@/pages/routes";
 
 export default function App() {
   return <AppRoutes />;
