@@ -1,9 +1,3 @@
-# React TS Starter Repo
+## Based on the ts-react-tailwind starter repo
 
-- React
-- TypeScript
-- Vite
-- TailwindCSS
-- Absolute path imports
-- ESLint auto sort imports
-- cn() utility function for clsx + twMerge
+- Initiates example routing with react-router v7 (lib mode)
