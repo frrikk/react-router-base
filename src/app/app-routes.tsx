@@ -1,14 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import { Route, Routes } from "react-router";
 
-const DashboardRoute = React.lazy(
-  () => import("@/pages/dashboard/dashboard-query"),
-);
+const DashboardRoute = lazy(() => import("@/pages/dashboard"));
 
 function AppRoutes() {
   return (
     <Routes>
-      <Route index element={<DashboardRoute />} />
+      <Route path="/*" element={<DashboardRoute />} />
     </Routes>
   );
 }
